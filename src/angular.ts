@@ -56,7 +56,7 @@ export class UIXButtonController {
     const rounded = options.rounded ?? false;
     const disabled = options.disabled ?? false;
     const loading = options.loading ?? false;
-    const ripple = options.ripple ?? true;
+    const ripple = options.ripple ?? false;
     const as = options.as ?? "button";
     const type = options.type ?? "button";
 

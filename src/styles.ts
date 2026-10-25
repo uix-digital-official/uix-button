@@ -18,11 +18,11 @@ export const BUTTON_CSS = `
 
   --uix-on-surface: #111827;
 
-  --uix-radius: 0.25;
+  --uix-radius: 0.25rem;
   --uix-radius-full: 9999px;
   --uix-gap: 0.5rem;
-  --uix-padding-inline: 1.5;
-  --uix-padding-block: 0.75;
+  --uix-padding-inline: 1.5rem;
+  --uix-padding-block: 0.75rem;
   --uix-font-size: 0.875rem;
   --uix-font-weight: 600;
   --uix-line-height: 1.25rem;
@@ -123,14 +123,14 @@ export const BUTTON_CSS = `
 
 .uix-button--sm {
   --uix-font-size: 1rem;
-  --uix-padding-inline: 0.625rem;
-  --uix-padding-block: 1.25rem;
+  --uix-padding-inline: 1.25rem;
+  --uix-padding-block: 0.625rem;
   --uix-gap: 0.375rem;
 }
 .uix-button--lg {
   --uix-font-size: 1rem;
-  --uix-padding-inline: 1.75;
-  --uix-padding-block: 0.875;
+  --uix-padding-inline: 1.75rem;
+  --uix-padding-block: 0.875rem;
   --uix-gap: 0.75rem;
 }
 .uix-button--rounded { border-radius: var(--uix-radius-full); }
@@ -155,14 +155,11 @@ export const BUTTON_CSS = `
   flex-shrink: 0;
 }
 .uix-button__spinner > svg { width: 100%; height: 100%; display: block; }
-.uix-button__spinner--default > svg { animation: uix-spin 0.8s linear infinite; }
 
-@keyframes uix-spin { to { transform: rotate(360deg); } }
 @keyframes uix-ripple-animation { to { transform: scale(2.5); opacity: 0; } }
 
 @media (prefers-reduced-motion: reduce) {
   .uix-button { transition: none; }
-  .uix-button__spinner--default > svg { animation: none; }
   .uix-ripple { display: none; }
 }
 `.trim();
