@@ -21,8 +21,10 @@ export const BUTTON_CSS = `
   --uix-radius: 0.25rem;
   --uix-radius-full: 9999px;
   --uix-gap: 0.5rem;
+  --uix-height: 2.5rem;
+  --uix-min-width: 2.5rem;
   --uix-padding-inline: 1.5rem;
-  --uix-padding-block: 0.75rem;
+  --uix-padding-block: 0;
   --uix-font-size: 0.875rem;
   --uix-font-weight: 600;
   --uix-line-height: 1.25rem;
@@ -35,6 +37,8 @@ export const BUTTON_CSS = `
   align-items: center;
   justify-content: center;
   gap: var(--uix-gap);
+  height: var(--uix-height);
+  min-width: var(--uix-min-width);
   padding: var(--uix-padding-block) var(--uix-padding-inline);
   border: 1px solid transparent;
   border-radius: var(--uix-radius);
@@ -121,17 +125,35 @@ export const BUTTON_CSS = `
   text-decoration: underline;
 }
 
+.uix-button--xs {
+  --uix-font-size: 0.75rem;
+  --uix-padding-inline: 0.625rem;
+  --uix-gap: 0.25rem;
+  --uix-height: 2rem;
+  --uix-min-width: 2rem;
+  --uix-line-height: 1rem;
+}
 .uix-button--sm {
-  --uix-font-size: 1rem;
-  --uix-padding-inline: 1.25rem;
-  --uix-padding-block: 0.625rem;
-  --uix-gap: 0.375rem;
+  --uix-padding-inline: 0.875rem;
+  --uix-height: 2.25rem;
+  --uix-min-width: 2.25rem;
+  --uix-line-height: 1.25rem;
 }
 .uix-button--lg {
   --uix-font-size: 1rem;
-  --uix-padding-inline: 1.75rem;
-  --uix-padding-block: 0.875rem;
+  --uix-padding-inline: 1.25rem;
   --uix-gap: 0.75rem;
+  --uix-height: 2.75rem;
+  --uix-min-width: 2.75rem;
+  --uix-line-height: 1.5rem;
+}
+.uix-button--xl {
+  --uix-font-size: 1rem;
+  --uix-padding-inline: 1.25rem;
+  --uix-gap: 0.625rem;
+  --uix-height: 3rem;
+  --uix-min-width: 3rem;
+  --uix-line-height: 1.5rem;
 }
 .uix-button--rounded { border-radius: var(--uix-radius-full); }
 
@@ -139,8 +161,8 @@ export const BUTTON_CSS = `
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 1em;
-  height: 1em;
+  width: 1.25em;
+  height: 1.25em;
   flex-shrink: 0;
 }
 .uix-button__icon > svg,

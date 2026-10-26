@@ -110,7 +110,7 @@ export const UIXButton = React.forwardRef<ButtonEl, UIXButtonProps>(
       rounded,
       disabled,
       loading,
-      ripple = true,
+      ripple = false,
       colorPalette,
       startIcon,
       endIcon,

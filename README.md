@@ -39,7 +39,7 @@ A lightweight, accessible button for **React**, **Vue 3**, **Angular**, and plai
 
 - 🎨 **6 variants**: `solid`, `subtle`, `surface`, `outline`, `ghost`, `plain`
 - 📏 **3 sizes**: `sm`, `md`, `lg`
-- 🌊 **Optional ripple effect**: on by default, turn it off with `ripple={false}` (respects `prefers-reduced-motion`)
+- 🌊 **Optional ripple effect**: off by default, turn it on with `ripple` (respects `prefers-reduced-motion`)
 - ⏳ **Loading state** with a default spinner or your own
 - 🔗 **Renders as `<button>` or `<a>`** with correct a11y attributes
 - 🎛️ **Dynamic color palettes** from a single color string or an object
